@@ -1,0 +1,953 @@
+@media screen and (max-width: 1110px)
+{
+	html{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 1054px)
+{
+	html {
+		font-size:14.5px;
+	}
+
+
+
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/*
+	green: #0a8020;
+	red: rgb(214, 35, 0);
+	darkbrown: rgb(80, 35, 20);
+	yellow:rgb(255,193,7);
+	redd:#cc6633;
+	yello:rgb(236,173,47);
+	*/
+	html {
+		scroll-behavior: smooth;
+		background-color:rgb(250,235,215);
+		z-index:-5;
+		font-size: 16px;
+	}
+
+	img {
+		/*border:1px solid black;*/
+		overflow:visible;
+		max-width:100%;
+		height:auto;
+		resize: both;
+	}
+
+	
+
+	header {
+		position: fixed;
+		z-index: 9999;
+		top: 0%;
+		left: 0%;
+		/*right:0%;*/
+		width: 100%;
+		height: 7.1875rem;
+		display: block;
+		box-shadow: 0 0 0.1875rem rgba(30,30,30,0.6);
+		background: rgb(250,235,215);
+	}
+
+	header .logo{
+		display: block;
+		background-image: url("../img/logo_re.png");
+		background-size: cover;
+		background-position: center;
+		resize: auto;
+		z-index: 10000;
+		top: 0.646875rem;
+		left: 5%;
+
+		/*border: 1px solid black;*/
+		width: 8.58%;
+		height: 5.75rem;
+		position: absolute;
+		text-decoration: none;
+		
+	}
+
+	
+
+	#navbar-container {
+		width:50%;
+		padding-top: 3.75rem;
+		padding-left: 45.38%;
+		/*padding-right: 20vw;*/
+		z-index:-1;
+		text-align: center;
+		display: block;
+		text-transform: uppercase;
+		font-family: "League Spartan";
+		position: relative; 
+		color: black;
+	}
+
+
+	.container {
+		display: none;
+		cursor: pointer;
+		position: absolute;
+		right:2%;
+		top: 6vh;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	.container:focus .bar1 {
+
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.container:focus .bar2 {opacity: 0;}
+
+	.container:focus .bar3 {
+		
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	
+
+	header .alt_logo {
+		display: none;
+	}
+
+	@media screen and (max-width:1085px ) {
+		header .logo {
+			display:none;
+		}
+
+		header .alt_logo {
+			display: block;
+			position: absolute;
+			top:6vh;
+			padding: 0 5%;
+			font-family: "Axis";
+			color: #e94e43;
+			font-size: 1.9rem;
+		}
+
+		header .container {
+			display:inline-block;
+		}
+
+		.alt_logo sup{
+			font-size:1.1rem;
+		}
+
+
+		#navbar-container {
+			display:none;
+
+		}
+	}
+
+	@media screen and (max-width:995px){
+		#special {
+			height: 140vh;
+		}
+	}
+	#navlist {
+		display: flex;
+		justify-content: space-between;
+
+		position: relative;
+		list-style-type:none; 
+	}
+
+	.navbar-item {
+		float: left;
+			/*opacity: 1;
+			transform: matrix(1,0,0,1,0,0);*/
+
+		}
+		.navbar-link {
+			text-decoration: none; 
+			color: rgb(80, 35, 20);
+			position: relative;
+			font-size: 1.1rem;
+			
+		}
+
+		.navbar-link:before{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 0.175rem;
+			bottom: -0.25rem;
+			left: 0%;
+			color: white;
+			background-color: rgb(80,35,20);
+			visibility: hidden;
+			transform: scaleX(0);
+			transition: all 0.3s ease-in-out;
+		}
+
+		.navbar-link:hover:before{
+			/*color: rgb(214, 35, 0);*/ 
+			visibility: visible;
+			transform: scaleX(1);
+		}
+		.navbar-link:active:before{
+			background-color: rgb(214, 35, 0);
+		}
+
+		.navbar-link:focus{
+			color: rgb(214, 35, 0);
+		}
+
+		
+
+		
+
+		#intro{
+			
+			position: absolute;
+			padding-top: 5.75rem;
+			display: flex;
+			/*justify-content: space-between;*/
+			height: 41.0625rem;
+			width: 100%;
+			z-index: 5;
+			/*clip-path: polygon(0 0,100% 0vh,100% 20.33vh,100% 100vh,0 85vh);*/
+			border:1px solid black;	
+
+		}
+
+
+		#intro_right {
+			position: relative;
+			right:0%;
+			width: 40%;
+			height: 41.0625rem;
+			/*border: 1px solid black;*/
+			background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 1.3%, rgba(0,0,0,0) 0%),linear-gradient(90deg, rgba(236,173,47,0.8) 0%, rgba(236,173,47,0.6) 70%, rgba(236,173,47,0.5) 100%);
+			background-size: cover;		
+		}
+
+
+		@media screen and (max-width: 975px){
+			.logo_big {
+				display: none;
+			}
+		}
+
+		.logo_big {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-70%) ;
+			object-position: center;
+			filter: drop-shadow(1px 4px 7px rgba(30,30,30,0.7));
+			height: 40vh;
+			width: 75%;
+			transition: transform 0.3s;
+		}
+
+		.logo_big:hover {
+			transform: translate(-50%,-70%) rotateZ(-7deg);
+			filter: drop-shadow(1px 5px 8px rgba(30,30,30,0.7));
+			animation-name: oscillate;
+			animation-delay: 0.3s;
+			animation-duration: 3s; 
+		}
+
+		@keyframes oscillate {
+			0% {
+				transform: translate(-50%,-70%) rotateZ(-7deg);
+			}
+
+			25% {
+				transform: translate(-50%,-70%) rotateZ(4deg);
+			}
+
+			50% {
+				transform: translate(-50%,-70%) rotateZ(-2deg);
+			}
+			75% {
+				transform: translate(-50%,-70%) rotateZ(1deg);
+			}
+			100% {
+				transform: translate(-50%,-70%) rotateZ(0deg);
+			}
+		}
+
+		.logo_big .img {
+			max-width: 100%;
+			height:auto;
+			resize: auto;
+			clip-path: circle(50% at 50% 50%);
+		}
+
+
+
+		#intro_left{
+			width:60%
+			height:41.0625rem;
+			background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0) 100%),url("../img/bg_1.jpg");
+			background-size: cover;
+			background-position: center;
+			display:flex;
+			padding-left:10%;
+		}
+
+		#sub_intro {		
+			height:12.5625rem;
+			left:20%;
+			padding-top: 9.5%;
+		}
+		
+		#sub_h {
+			color: #da8044;
+			font-size:228.1%;
+			width: 75%;
+			margin-bottom:0px;
+			font-family: /*"Axis"*/"League Spartan";
+			text-transform: uppercase;
+		}
+
+		#sub_p{
+			color:rgba(255,255,255,0.8);
+			font-family: "Aileron-Heavy";		
+			text-transform: uppercase;
+			margin-right: 20%;
+			word-spacing: 4px;
+		}
+
+
+
+		#intro_left a{
+			text-transform: uppercase;
+			font-family: "Aileron-Heavy";
+			position:relative;
+			top:35%;
+			padding: 5% 9%;
+			text-decoration: none;
+			color:#ffffff;
+			display:inline-block;
+			border: 2px solid #bbbbbb;
+			backface-visibility: hidden;
+			animation-name: moveInBottom;
+			animation-duration: 1.5s;
+			transition:all 0.3s;
+
+		}
+
+		#intro_left a:hover {
+			transition:0.4s ease-in-out;
+			transform: translateY(-3px);
+			background-color: rgba(256,256,256,0.8);
+			color: black;
+
+		}
+
+		#intro_left a:active {
+			transform:translateY(-1px);
+		}
+
+		#intro_left a::after {
+			background:white;
+			position:absolute;
+			z-index:-1;
+			width:100%;
+			height:100%;
+			transition: all 0.4s;
+		}
+
+		#intro_left a:hover::after {
+			transform:scaleX(1.5);
+			transform:scaleY(1.4);
+			opacity:0;
+		}
+
+
+
+
+		#page-box{
+			position: absolute;
+			top:100vh;
+			left:0;
+			width: 100%;
+
+		}
+
+		.page {
+			left: 0%;
+			right: 0;
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			border: 1px solid black;
+			z-index: 5;
+		}
+
+		.page_head {
+			left:3%;
+			top:22vh;
+			position: absolute;
+
+		}
+
+		.page_head_main {
+			font-family: "Axis";
+			text-transform: uppercase;
+			font-size: 36px;
+			display: block;
+			animation-name: moveInLeft;
+			animation-duration: 2.4s;
+			animation-delay: 0.5s;
+			backface-visibility: hidden;
+		}
+
+		.page_head_sub {
+			display: inline-block;
+			font-family: "Aileron-Light";
+			animation-name: moveInLeft;
+			animation-duration: 2.4s;
+			animation-delay:0.5s;
+			backface-visibility: hidden;
+			font-size: 16px;
+		}
+
+		#special {
+			height: 100vh;
+			background-image: url("../img/bg_2.png");
+			background-size: cover;
+			background-position: center;
+			/*clip-path: polygon(0 12vh,100% 25vh,100% 100vh,0% 85vh);*/
+		}
+
+		#special .page_head_main {
+			color: #da8044;
+		}
+
+		#special .page_head_sub {
+			color: #ffffff;
+		}
+
+		#recommend .page_head_main {
+			color: #502314;
+
+		}
+
+		#recommend .page_head_sub {
+			color: #f14038;
+
+		}
+
+		#review .page_head {
+			top: 20vh;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		#review .page_head_main {
+			color: #d0f912;/*#da8044;*/
+			letter-spacing: 7px;
+		}
+
+		#review .page_head_sub {
+			color: #ffffff;
+		} 
+
+		.gallery {
+			position: relative;
+			padding: 0 5%;
+			display: grid;
+		}
+
+		#special .gallery {
+			grid-template-columns: repeat(auto-fit,minmax(111px,1fr));
+			grid-gap: 15px;
+			/*z-index:100;*/
+			/*grid-auto-rows: minmax(162px,16.8vw);*/
+			/*grid-template-rows: repeat(1,calc(0.84*20vw));*/
+			top: 40vh;
+		}
+
+		#special .card {
+			background-color: white;
+			border-radius: 10px;
+			/*z-index:100;*/
+			display: inline-block;
+			height: calc(0.84* 20vw);
+			padding:4% 5%;
+			box-shadow: 0 5px 10px rgba(43,43,43,0.6);
+			cursor: pointer;
+			transition: all 0.4s;
+			position: relative;
+		}
+
+		#recommend .card {
+			background-color: white;
+			border-radius: 10px;
+			/*z-index:100;*/
+			display: inline-block;
+			height: calc(0.64* 20vw);
+			padding:4% 5%;
+			box-shadow: 0 5px 10px rgba(43,43,43,0.6);
+			cursor: pointer;
+			transition: all 0.4s;
+			position: relative;
+		}
+
+		.card:hover {
+			transform: translateY(-7px) scale(1.2);
+			box-shadow: 0 10px 20px rgba(40,40,40,0.8);
+		}
+
+		.card::after {
+			content:"Know More";
+			text-align: center;
+
+			width: 40%;
+			height: 8%;
+			left: 30%;
+			top: 75%;
+			border-radius: 25px;
+			border: 1px solid rgb(127,127,127);
+			opacity:0;
+			color:rgb(127,127,127);
+			z-index:-10;
+			font-family: "Aileron-Heavy";
+			font-size: 13px;
+			transition: all 0.3s; 
+			transition-delay: 0.4s;
+			background:transparent;
+			display: block;
+			position: absolute;
+		}
+
+		.card:hover::after {
+			opacity: 1;
+			z-index: 10;
+		}
+
+		.card:focus::after {
+			content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+			text-align:center;
+			text-overflow: ellipsis;
+			border-radius: 10px;
+			padding: 4% 4%;
+			overflow: hidden;
+			font-family: "Aileron-Light";
+			background-color: white;
+			border: none;
+			z-index:10;
+			top:36%;
+			left: -4%;
+			width: 100%;
+			height: 60%;
+
+		}
+
+		.card::before {
+			content: url("../img/");
+			z-index:-20;
+			width: 40%;
+			height: 8%;
+			left: 30%;
+			top: 75%;
+			transition: all 0.3s;
+			transition-delay: 0.4s;
+			background-color: white;
+			display: block;
+			border: none;
+			border-radius: 10px;
+			padding: 4% 4%;
+
+			position: absolute;
+
+			opacity:0;
+		}
+
+		.card:hover::before {
+			opacity :1;
+		}
+		.card:focus::before {
+
+
+			z-index:10;
+			width: 100%;
+
+			height: 40%;
+			top:0;
+			left:-4%;
+			padding:4% 4%;
+		}
+
+
+
+		.card_title { 
+			top:0;
+			text-transform: capitalize;
+			text-overflow: ellipsis;
+			overflow: hidden;
+
+			width: 100%;
+			height: auto;
+
+		}
+
+		.card_title .name {
+			font-size: 13px;
+			font-family: "Aileron Light";
+
+
+		}
+
+		#special .card_img img{
+			width: 100%;
+			resize: auto;
+
+		}
+
+		#recommend .card_img img{
+			width: 100%;
+			resize: auto;
+		}
+
+
+
+		.card_img {
+			align-self: center;
+			display: block;
+			margin-top: 2%;
+		}
+
+
+		.card_desc {
+			font-family: "Aileron-Heavy";
+			text-align: right;
+			position: absolute;
+			bottom:2%;
+			right:2%;
+			width: 100%;
+		}
+
+		.card_desc .sign {
+			position: absolute;
+			bottom:0;
+			left:4.5%;
+		}
+
+		#special .card_desc .sign, #special .card_desc .discount {
+			resize: both;
+			max-width: 17.1%;
+		}
+
+		#recommend .card_desc .sign, #recommend .card_desc .discount{
+			resize: both;
+			max-width: calc(17.1% * 0.6666);
+		}
+
+		#special .price ,#special .no_off{
+			font-size: 0.875rem;
+
+		}
+
+		#recommend	.price, #recommend .no_off{
+			font-size: 0.75rem;
+		}
+		/*.card_desc .desc{
+			margin-left: 10%;
+			font-size:12px;
+			display: block;
+			
+			width:180px;
+			}*/
+			.card_desc .discount {
+				vertical-align: middle;
+				max-width: 
+			}
+
+			.card_desc .no_off {
+				width: auto;
+				margin-bottom: 13%;
+				margin-right: 5%;
+
+			}
+
+			#recommend .gallery {
+				top: 60vh;
+			}
+
+			.add_box {
+				position: relative;
+				border:1px solid #0a8020;
+				border-radius:3px;
+				background: white;
+				color: #0a8020;
+				font-family: "Aileron-Light";
+				transition: all 0.3s;
+				padding:0% 1%;
+
+			}
+
+			.add_box:hover {
+				background-color: #0a8020;
+				color:white;
+
+			}
+
+			.add_box::after {
+				content:"ADDED";
+				display: inline-block;
+				padding:0% 1%;
+				opacity: 0;
+				position: absolute;
+				border:1px solid #0a8020;
+				border-radius:3px;
+				background: white;
+				height: 100%;
+				width: 120%;
+				color: #0a8020;
+				font-family: "Aileron-Light";
+				transition: all 0.3s;
+				z-index:20;
+				transform:translate(-92%,-5%);
+				transition: transform 0.3s;
+			}
+
+			.add_box:focus::after {
+				opacity: 1;
+			}
+
+			#recommend {
+				height: 150vh;
+				/*clip-path: polygon(0 10vh,100% 25vh,100% 150vh,0 135vh);*/
+				background-image: linear-gradient(90deg, rgba(255,255,255,0.6) 5%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%),url(../img/bg_3.jpg);
+				background-size: cover;
+			}
+
+			.search_bar .bar {
+				position: absolute;
+				background-color: rgba(255,255,255,0.8);
+				outline: none;
+				border-radius: 20px;
+				border: none;
+				padding-left:1%;
+				padding-right: 4%;
+				box-shadow: 0 3px 6px rgba(33,33,33,0.6);
+				width:26%;
+				height: 6vh;
+				left:50%;
+				top: 43vh;
+				transform:translate(-50%,0);
+				transition: all 0.3s;
+				z-index: 5;
+			}
+
+			.search_bar .bar:hover {
+				transform: translate(-50%,-2px);
+				box-shadow: 0 5px 10px rgba(30,30,30,0.8);
+			}
+
+			.search_bar .bar:focus {
+				background-color: white;
+			}
+
+			.search_bar .btn {
+				position: absolute;
+				top: 43.5vh;
+				left:62%;
+				z-index: 9;
+				outline: none;
+				border:none;
+				/*background-color: rgba(255,255,255,0.2);*/
+				height:5.1vh;
+				width: 2.7%;
+				opacity: 0.4;
+				border-radius: 100px;
+				background-image: url("https://img.icons8.com/material-outlined/37/000000/search--v2.svg");
+				background-size: cover;
+				background-position: center;
+				transform:scale(0.8);
+
+			}
+
+			.search_bar .btn:hover {
+				opacity:0.7;
+				background-color: rgba(127,127,127,0.7);
+				cursor: pointer;
+
+			}
+
+			.search_bar .btn:active {
+				background-color: rgba(110,110,110,0.9);
+			}
+
+
+			#recommend .gallery {
+				grid-row-gap: 10vh;
+				grid-template-columns: repeat(4,0.4fr);
+				grid-template-rows: repeat(2,25vh);
+			}
+
+			#review {
+				background-image: linear-gradient(to top right,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url("../img/bg_4.png");
+				background-size: cover;
+				height: 150vh;
+				/*clip-path: polygon(0 10vh,100% 25vh,100% 130vh,0% 130vh);*/
+				display: flex;
+			}
+/* 
+		.foot {
+		position:absolute;
+		border:1px solid blue;
+		width:100%;
+		height:40vh;
+		left:0;
+		bottom:0%;
+		top:450vh;
+		}*/
+
+
+
+
+		
+
+		@keyframes moveInBottom{
+			0% {
+				opacity: 0;
+				transform: translateY(50px);
+			}
+
+			80% {
+				transform:translateY(-5px);
+			}
+
+			100%{
+				opacity: 1;
+				transform: translate(0);
+				
+			}
+		}
+
+		@keyframes moveInLeft{
+			0% {
+				opacity: 0;
+				transform:translateX(-100%);
+			}
+
+			80% {
+				transform:translateX(1%); ;
+			}
+
+			100% {
+				transform: translate(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes moveUp {
+			0% {
+				opacity: 0;
+			}
+
+			80% {
+				translate:translateY(-111%);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(-101%);
+			}
+		}
+		
+
+		@font-face{
+			font-family: "League Spartan";
+			src: url("../fonts/LeagueSpartan-Bold.otf");
+		}
+		
+		@font-face{
+			font-family: "Aileron-Light";
+			src: url('../fonts/Aileron-LightItalic.otf');
+		}
+
+		@font-face{
+			font-family:"Aileron-Heavy";
+			src: url("../fonts/Aileron-HeavyItalic.otf");
+		}
+
+		@font-face{
+			font-family: "Monteserrat";
+			src: url("../fonts/Montserrat-MediumItalic.ttf");
+		}
+		
+
+
+
+
+
+
+/*.#review input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 3% 3% 3% 0;
+  display: inline-block;
+}
+
+#review input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.form_box {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 70%;
+  transform:translate(-50%,-30%);
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+*/
+/*.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  }*/
+
+  @media screen and (max-width: 600px) {
+  	.col-25, .col-75, #review input[type=submit] {
+  		width: 100%;
+  		margin-top: 0;
+  	}
+  }
